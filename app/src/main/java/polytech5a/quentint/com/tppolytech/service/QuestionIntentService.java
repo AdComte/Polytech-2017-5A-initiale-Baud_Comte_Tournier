@@ -3,6 +3,8 @@ package polytech5a.quentint.com.tppolytech.service;
 import android.app.IntentService;
 import android.content.Intent;
 
+import polytech5a.quentint.com.tppolytech.models.TextQuestion;
+
 
 /**
  * An {@link IntentService} subclass for handling asynchronous task requests in
@@ -17,6 +19,9 @@ public class QuestionIntentService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
+        //Hard coded just for dev purpose
+        TextQuestion q = new TextQuestion("Quel est le muscle ?", new String[]{"Cubitus", "Oreille", "Un Canard", "La reponse D"},"La reponse D", 10);
+        
         /**
          * TODO
          * Intent action = "Question" -> retrieve a question
