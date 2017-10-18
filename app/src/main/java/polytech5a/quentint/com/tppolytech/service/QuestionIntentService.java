@@ -11,7 +11,7 @@ import android.content.Intent;
  * TODO: Customize class - update intent actions and extra parameters.
  */
 public class QuestionIntentService extends IntentService {
-    public MyIntentService() {
+    public QuestionIntentService() {
         super("QuestionIntentService");
     }
 
