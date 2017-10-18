@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">PolytechTP</string>
+    <string name="app_name">QUIQUIZZ</string>
     <string name="title">Mon Titre</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="b_1via">1 vs IA</string>
+    <string name="b_1v1">1 vs 1</string>
+    <string name="b_tvt">Team A vs Team B</string>
+    <string name="b_1v1_online">1 vs 1 Online</string>
+    <string name="team">Team :</string>
+    <string name="lives">Lives :</string>
+    <string name="player">Player :</string>
+    <string name="score">Score :</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

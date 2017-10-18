@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/menuView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/offline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/offline"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/offline_btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="goToGame"
+        android:text="@string/b_1via"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/offline_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/offline" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/offline_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/offline_btn1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offline"
+            android:text="@string/b_1v1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/offline_btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offline_btn1"
+            android:text="@string/b_tvt" />
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/online"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/offline_btn3"
+            android:text="@string/online"
+            android:layout_marginTop="64dp"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/online_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/online"
+            android:text="@string/b_1v1_online" />
+
+</android.support.constraint.ConstraintLayout>
