@@ -10,4 +10,21 @@ public class Beer {
     private String image_url;
     private String description;
     private float abv;
+
+
+    public String getName() {
+        return name;
+    }
+
+    public String getImage_url() {
+        return image_url;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public float getAbv() {
+        return abv;
+    }
 }

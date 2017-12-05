@@ -21,5 +21,6 @@
             android:name=".service.MyIntentService"
             android:exported="false"></service>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

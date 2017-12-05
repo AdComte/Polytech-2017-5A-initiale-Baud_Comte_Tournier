@@ -11,8 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import polytech5a.quentint.com.tppolytech.models.TextQuestion;
-
 /**
  * A simple {@link Fragment} subclass.
  */
