@@ -30,18 +30,6 @@ public class GameFragment extends Fragment {
         IntentFilter filter = new IntentFilter();
         filter.addAction("Question");
 
-
-        receiver = new BroadcastReceiver() {
-
-
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                if(intent.getAction().equals("Question")){
-                    TextQuestion tq = intent.getParcelableExtra("Question");
-                }
-            }
-        };
-
         Intent intent = new Intent();
         intent.setAction("Question");
         getActivity().sendBroadcast(intent);

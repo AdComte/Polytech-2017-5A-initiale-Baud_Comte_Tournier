@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
             HomeFragment firstFragment = new HomeFragment();
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragment_container, firstFragment).commit();
-
-
         }
     }
 
