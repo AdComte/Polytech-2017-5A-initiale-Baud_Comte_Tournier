@@ -77,7 +77,7 @@ public class BeerApiManager implements Callable<Beer[]>{
     private Beer[] getOneBeer(String url) {
         Beer[] beer = null;
         try {
-            URL finalUrl = new URL(url);
+            URL finalUrl = new URL(API_URL+url);
             HttpURLConnection urlConnection = (HttpURLConnection) finalUrl.openConnection();
             try {
                 InputStream in = new BufferedInputStream(urlConnection.getInputStream());

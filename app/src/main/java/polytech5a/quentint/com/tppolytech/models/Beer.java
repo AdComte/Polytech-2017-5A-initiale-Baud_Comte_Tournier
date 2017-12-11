@@ -16,6 +16,10 @@ public class Beer {
         return name;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public String getImage_url() {
         return image_url;
     }

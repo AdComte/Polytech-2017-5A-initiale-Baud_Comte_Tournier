@@ -40,17 +40,16 @@ public class HomeFragment extends Fragment {
             e.printStackTrace();
         }
 
-        ArrayList<Beer> arrayBeer = new ArrayList<Beer>(Arrays.asList(beers));
-
-        BeerAdapter beerAdapter;
+        ArrayList<Beer> arrayBeer = new ArrayList<>(Arrays.asList(beers));
 
         View view = inflater.inflate(R.layout.list_beer, container, false);
 
+
         ListView listView = (ListView) view.findViewById(R.id.list_view);
-        beerAdapter = new BeerAdapter (getActivity().getApplicationContext(), arrayBeer);
+        BeerAdapter beerAdapter = new BeerAdapter (getActivity(), arrayBeer);
         listView.setAdapter(beerAdapter);
         beerAdapter.addAll(arrayBeer);
 
-        return inflater.inflate(R.layout.list_beer, container, false);
+        return view;
     }
 }
