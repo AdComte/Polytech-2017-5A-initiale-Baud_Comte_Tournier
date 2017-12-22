@@ -5,16 +5,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Callable;
+import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import polytech5a.quentint.com.tppolytech.models.Beer;
+import polytech5a.quentint.com.tppolytech.models.BeerAdapter;
 import polytech5a.quentint.com.tppolytech.models.BeerApiManager;
 
 /**
@@ -39,9 +39,17 @@ public class HomeFragment extends Fragment {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        for(Beer b:beers){
-            System.out.println(b.getName());
-        }
-        return inflater.inflate(R.layout.fragment_home, container, false);
+
+        ArrayList<Beer> arrayBeer = new ArrayList<>(Arrays.asList(beers));
+
+        View view = inflater.inflate(R.layout.list_beer, container, false);
+
+
+        ListView listView = (ListView) view.findViewById(R.id.list_view);
+        BeerAdapter beerAdapter = new BeerAdapter (getActivity(), arrayBeer);
+        listView.setAdapter(beerAdapter);
+        beerAdapter.addAll(arrayBeer);
+
+        return view;
     }
 }
