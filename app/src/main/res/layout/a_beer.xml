@@ -11,7 +11,8 @@
         android:layout_width="211dp"
         android:layout_height="196dp"
         android:layout_rowSpan="2"
-        android:src="@drawable/beer" />
+        android:src="@drawable/beer"
+        android:padding="15dp"/>
 
 
     <TextView
@@ -19,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name"
+        android:padding="15dp"
             />
 
     <TextView
@@ -28,6 +30,7 @@
         android:text="@string/alc_x"
         android:layout_alignBottom="@+id/beerPic"
         android:layout_alignStart="@+id/beerName"
+        android:padding="15dp"
              />
 
 </GridLayout>
